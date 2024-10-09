@@ -1,15 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    clean: true, // This will clean the dist folder before each build
   },
-  mode: 'development', 
+  mode: 'development',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'], 
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   module: {
     rules: [
@@ -19,34 +21,26 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/, 
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/, 
+        test: /\.css$/,
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-              outputPath: 'img',
-              publicPath: 'img',
-              esModule: false,
-            },
-          },
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
         ],
       },
       {
-        test: /\.(wav|mp3|ogg|m4a|aac|flac)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-              outputPath: 'assets/sfx/',
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name][ext]',
+        },
+      },
+      {
+        test: /\.(wav|mp3|ogg|m4a|aac|flac)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/sfx/[name][ext]',
+        },
       },
       {
         test: /\.(js|jsx)$/,
@@ -65,11 +59,15 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
-    port: 9000, 
+    port: 9000,
+    hot: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', 
+      template: './public/index.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
     }),
   ],
 };

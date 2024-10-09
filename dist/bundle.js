@@ -42,39 +42,6 @@ eval("\n\nvar bind = __webpack_require__(/*! function-bind */ \"./node_modules/f
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/index.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
-  \*************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `@tailwind base;\n@tailwind components;\n@tailwind utilities;`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/index.css?./node_modules/css-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/noSourceMaps.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/noSourceMaps.js ***!
-  \**************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
-
-/***/ }),
-
 /***/ "./node_modules/define-data-property/index.js":
 /*!****************************************************!*\
   !*** ./node_modules/define-data-property/index.js ***!
@@ -196,139 +163,6 @@ eval("\n\nvar has = Object.prototype.hasOwnProperty\n  , prefix = '~';\n\n/**\n 
 
 /***/ }),
 
-/***/ "./src/assets/img/banana.png":
-/*!***********************************!*\
-  !*** ./src/assets/img/banana.png ***!
-  \***********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/banana.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/banana.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/bars.png":
-/*!*********************************!*\
-  !*** ./src/assets/img/bars.png ***!
-  \*********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/bars.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/bars.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/bigwin.png":
-/*!***********************************!*\
-  !*** ./src/assets/img/bigwin.png ***!
-  \***********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/bigwin.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/bigwin.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/cherry.png":
-/*!***********************************!*\
-  !*** ./src/assets/img/cherry.png ***!
-  \***********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/cherry.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/cherry.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/lemon.png":
-/*!**********************************!*\
-  !*** ./src/assets/img/lemon.png ***!
-  \**********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/lemon.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/lemon.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/orange.png":
-/*!***********************************!*\
-  !*** ./src/assets/img/orange.png ***!
-  \***********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/orange.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/orange.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/plum.png":
-/*!*********************************!*\
-  !*** ./src/assets/img/plum.png ***!
-  \*********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/plum.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/plum.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/seven.png":
-/*!**********************************!*\
-  !*** ./src/assets/img/seven.png ***!
-  \**********************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/seven.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/seven.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/slot-bg.png":
-/*!************************************!*\
-  !*** ./src/assets/img/slot-bg.png ***!
-  \************************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/slot-bg.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/slot-bg.png?");
-
-/***/ }),
-
-/***/ "./src/assets/img/watermelon.png":
-/*!***************************************!*\
-  !*** ./src/assets/img/watermelon.png ***!
-  \***************************************/
-/***/ ((module) => {
-
-eval("module.exports = \"img/src/assets/img/watermelon.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/watermelon.png?");
-
-/***/ }),
-
-/***/ "./src/assets/sfx/background.mp3":
-/*!***************************************!*\
-  !*** ./src/assets/sfx/background.mp3 ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/sfx/src/assets/sfx/background.mp3\");\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/background.mp3?");
-
-/***/ }),
-
-/***/ "./src/assets/sfx/click.mp3":
-/*!**********************************!*\
-  !*** ./src/assets/sfx/click.mp3 ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/sfx/src/assets/sfx/click.mp3\");\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/click.mp3?");
-
-/***/ }),
-
-/***/ "./src/assets/sfx/stop.wav":
-/*!*********************************!*\
-  !*** ./src/assets/sfx/stop.wav ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"assets/sfx/src/assets/sfx/stop.wav\");\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/stop.wav?");
-
-/***/ }),
-
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -447,6 +281,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ isMobile)\n/* harmony export */ });\nvar appleIphone = /iPhone/i;\nvar appleIpod = /iPod/i;\nvar appleTablet = /iPad/i;\nvar appleUniversal = /\\biOS-universal(?:.+)Mac\\b/i;\nvar androidPhone = /\\bAndroid(?:.+)Mobile\\b/i;\nvar androidTablet = /Android/i;\nvar amazonPhone = /(?:SD4930UR|\\bSilk(?:.+)Mobile\\b)/i;\nvar amazonTablet = /Silk/i;\nvar windowsPhone = /Windows Phone/i;\nvar windowsTablet = /\\bWindows(?:.+)ARM\\b/i;\nvar otherBlackBerry = /BlackBerry/i;\nvar otherBlackBerry10 = /BB10/i;\nvar otherOpera = /Opera Mini/i;\nvar otherChrome = /\\b(CriOS|Chrome)(?:.+)Mobile/i;\nvar otherFirefox = /Mobile(?:.+)Firefox\\b/i;\nvar isAppleTabletOnIos13 = function (navigator) {\n    return (typeof navigator !== 'undefined' &&\n        navigator.platform === 'MacIntel' &&\n        typeof navigator.maxTouchPoints === 'number' &&\n        navigator.maxTouchPoints > 1 &&\n        typeof MSStream === 'undefined');\n};\nfunction createMatch(userAgent) {\n    return function (regex) { return regex.test(userAgent); };\n}\nfunction isMobile(param) {\n    var nav = {\n        userAgent: '',\n        platform: '',\n        maxTouchPoints: 0\n    };\n    if (!param && typeof navigator !== 'undefined') {\n        nav = {\n            userAgent: navigator.userAgent,\n            platform: navigator.platform,\n            maxTouchPoints: navigator.maxTouchPoints || 0\n        };\n    }\n    else if (typeof param === 'string') {\n        nav.userAgent = param;\n    }\n    else if (param && param.userAgent) {\n        nav = {\n            userAgent: param.userAgent,\n            platform: param.platform,\n            maxTouchPoints: param.maxTouchPoints || 0\n        };\n    }\n    var userAgent = nav.userAgent;\n    var tmp = userAgent.split('[FBAN');\n    if (typeof tmp[1] !== 'undefined') {\n        userAgent = tmp[0];\n    }\n    tmp = userAgent.split('Twitter');\n    if (typeof tmp[1] !== 'undefined') {\n        userAgent = tmp[0];\n    }\n    var match = createMatch(userAgent);\n    var result = {\n        apple: {\n            phone: match(appleIphone) && !match(windowsPhone),\n            ipod: match(appleIpod),\n            tablet: !match(appleIphone) &&\n                (match(appleTablet) || isAppleTabletOnIos13(nav)) &&\n                !match(windowsPhone),\n            universal: match(appleUniversal),\n            device: (match(appleIphone) ||\n                match(appleIpod) ||\n                match(appleTablet) ||\n                match(appleUniversal) ||\n                isAppleTabletOnIos13(nav)) &&\n                !match(windowsPhone)\n        },\n        amazon: {\n            phone: match(amazonPhone),\n            tablet: !match(amazonPhone) && match(amazonTablet),\n            device: match(amazonPhone) || match(amazonTablet)\n        },\n        android: {\n            phone: (!match(windowsPhone) && match(amazonPhone)) ||\n                (!match(windowsPhone) && match(androidPhone)),\n            tablet: !match(windowsPhone) &&\n                !match(amazonPhone) &&\n                !match(androidPhone) &&\n                (match(amazonTablet) || match(androidTablet)),\n            device: (!match(windowsPhone) &&\n                (match(amazonPhone) ||\n                    match(amazonTablet) ||\n                    match(androidPhone) ||\n                    match(androidTablet))) ||\n                match(/\\bokhttp\\b/i)\n        },\n        windows: {\n            phone: match(windowsPhone),\n            tablet: match(windowsTablet),\n            device: match(windowsPhone) || match(windowsTablet)\n        },\n        other: {\n            blackberry: match(otherBlackBerry),\n            blackberry10: match(otherBlackBerry10),\n            opera: match(otherOpera),\n            firefox: match(otherFirefox),\n            chrome: match(otherChrome),\n            device: match(otherBlackBerry) ||\n                match(otherBlackBerry10) ||\n                match(otherOpera) ||\n                match(otherFirefox) ||\n                match(otherChrome)\n        },\n        any: false,\n        phone: false,\n        tablet: false\n    };\n    result.any =\n        result.apple.device ||\n            result.android.device ||\n            result.windows.device ||\n            result.other.device;\n    result.phone =\n        result.apple.phone || result.android.phone || result.windows.phone;\n    result.tablet =\n        result.apple.tablet || result.android.tablet || result.windows.tablet;\n    return result;\n}\n//# sourceMappingURL=isMobile.js.map\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/ismobilejs/esm/isMobile.js?");
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://vorhol-slot/./src/index.css?");
 
 /***/ }),
 
@@ -722,83 +567,6 @@ eval("\n\nvar GetIntrinsic = __webpack_require__(/*! get-intrinsic */ \"./node_m
 
 /***/ }),
 
-/***/ "./src/index.css":
-/*!***********************!*\
-  !*** ./src/index.css ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./index.css */ \"./node_modules/css-loader/dist/cjs.js!./src/index.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\noptions.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/index.css?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\nvar stylesInDOM = [];\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n  for (var i = 0; i < stylesInDOM.length; i++) {\n    if (stylesInDOM[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n  return result;\n}\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var indexByIdentifier = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3],\n      supports: item[4],\n      layer: item[5]\n    };\n    if (indexByIdentifier !== -1) {\n      stylesInDOM[indexByIdentifier].references++;\n      stylesInDOM[indexByIdentifier].updater(obj);\n    } else {\n      var updater = addElementStyle(obj, options);\n      options.byIndex = i;\n      stylesInDOM.splice(i, 0, {\n        identifier: identifier,\n        updater: updater,\n        references: 1\n      });\n    }\n    identifiers.push(identifier);\n  }\n  return identifiers;\n}\nfunction addElementStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  var updater = function updater(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {\n        return;\n      }\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n  return updater;\n}\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDOM[index].references--;\n    }\n    var newLastIdentifiers = modulesToDom(newList, options);\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n      var _index = getIndexByIdentifier(_identifier);\n      if (stylesInDOM[_index].references === 0) {\n        stylesInDOM[_index].updater();\n        stylesInDOM.splice(_index, 1);\n      }\n    }\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
-  \********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\nvar memo = {};\n\n/* istanbul ignore next  */\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target);\n\n    // Special case to return head of iframe instead of iframe itself\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n    memo[target] = styleTarget;\n  }\n  return memo[target];\n}\n\n/* istanbul ignore next  */\nfunction insertBySelector(insert, style) {\n  var target = getTarget(insert);\n  if (!target) {\n    throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n  }\n  target.appendChild(style);\n}\nmodule.exports = insertBySelector;\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/insertBySelector.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var element = document.createElement(\"style\");\n  options.setAttributes(element, options.attributes);\n  options.insert(element, options.options);\n  return element;\n}\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("\n\n/* istanbul ignore next  */\nfunction setAttributesWithoutAttributes(styleElement) {\n  var nonce =  true ? __webpack_require__.nc : 0;\n  if (nonce) {\n    styleElement.setAttribute(\"nonce\", nonce);\n  }\n}\nmodule.exports = setAttributesWithoutAttributes;\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
-  \***************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj) {\n  var css = \"\";\n  if (obj.supports) {\n    css += \"@supports (\".concat(obj.supports, \") {\");\n  }\n  if (obj.media) {\n    css += \"@media \".concat(obj.media, \" {\");\n  }\n  var needLayer = typeof obj.layer !== \"undefined\";\n  if (needLayer) {\n    css += \"@layer\".concat(obj.layer.length > 0 ? \" \".concat(obj.layer) : \"\", \" {\");\n  }\n  css += obj.css;\n  if (needLayer) {\n    css += \"}\";\n  }\n  if (obj.media) {\n    css += \"}\";\n  }\n  if (obj.supports) {\n    css += \"}\";\n  }\n  var sourceMap = obj.sourceMap;\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  }\n\n  // For old IE\n  /* istanbul ignore if  */\n  options.styleTagTransform(css, styleElement, options.options);\n}\nfunction removeStyleElement(styleElement) {\n  // istanbul ignore if\n  if (styleElement.parentNode === null) {\n    return false;\n  }\n  styleElement.parentNode.removeChild(styleElement);\n}\n\n/* istanbul ignore next  */\nfunction domAPI(options) {\n  if (typeof document === \"undefined\") {\n    return {\n      update: function update() {},\n      remove: function remove() {}\n    };\n  }\n  var styleElement = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(styleElement, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(styleElement);\n    }\n  };\n}\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
-  \*********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://vorhol-slot/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
 /***/ "./src/App.tsx":
 /*!*********************!*\
   !*** ./src/App.tsx ***!
@@ -817,7 +585,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _pixi_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/react */ \"./node_modules/@pixi/react/dist/index.es-dev.js\");\n/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! pixi.js */ \"./node_modules/pixi.js/lib/index.mjs\");\n/* harmony import */ var _services_game_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/game.service */ \"./src/services/game.service.ts\");\n/* harmony import */ var _services_audio_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/audio.service */ \"./src/services/audio.service.ts\");\nvar __spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {\n    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {\n        if (ar || !(i in from)) {\n            if (!ar) ar = Array.prototype.slice.call(from, 0, i);\n            ar[i] = from[i];\n        }\n    }\n    return to.concat(ar || Array.prototype.slice.call(from));\n};\n\n\n\n\n\n\nvar SlotMachine = function (_a) {\n    var _b = _a.reels, initialReels = _b === void 0 ? 5 : _b, _c = _a.rows, initialRows = _c === void 0 ? 5 : _c, symbols = _a.symbols, _d = _a.spinDuration, spinDuration = _d === void 0 ? 3000 : _d, _e = _a.spinSpeed, spinSpeed = _e === void 0 ? 30 : _e;\n    var _f = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), spinning = _f[0], setSpinning = _f[1];\n    var _g = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initialReels), reels = _g[0], setReels = _g[1];\n    var _h = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initialRows), rows = _h[0], setRows = _h[1];\n    var _j = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]), reelPositions = _j[0], setReelPositions = _j[1];\n    var _k = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]), stoppedReels = _k[0], setStoppedReels = _k[1];\n    var _l = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(5), betAmount = _l[0], setBetAmount = _l[1];\n    var _m = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showLinesDropup = _m[0], setShowLinesDropup = _m[1];\n    var _o = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showColsDropup = _o[0], setShowColsDropup = _o[1];\n    var _p = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showBetAmounts = _p[0], setShowBetAmounts = _p[1];\n    var _q = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getBalance()), balance = _q[0], setBalance = _q[1];\n    var _r = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null), hoveredButton = _r[0], setHoveredButton = _r[1];\n    var _s = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null), hoveredOption = _s[0], setHoveredOption = _s[1];\n    var _t = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0), betIndex = _t[0], setBetIndex = _t[1];\n    var machineWidth = 900;\n    var machineHeight = 600;\n    var reelsWidth = machineWidth * 0.95;\n    var reelsHeight = machineHeight * 0.75;\n    var borderWidth = 4;\n    var buttonWidth = 120;\n    var buttonWidthSmall = 60;\n    var buttonHeight = 40;\n    var buttonSpacing = 20;\n    var topPadding = 60;\n    var reelWidth = (reelsWidth - (reels + 1) * borderWidth) / reels;\n    var symbolHeight = (reelsHeight - (rows + 1) * borderWidth) / rows;\n    var symbolSize = Math.min(reelWidth * 0.8, symbolHeight * 0.8);\n    var textures = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return symbols.map(function (symbol) { return pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(__webpack_require__(\"./src/assets/img sync recursive ^\\\\.\\\\/.*\\\\.png$\")(\"./\".concat(symbol, \".png\"))); }); }, [symbols]);\n    var blurFilter = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return new pixi_js__WEBPACK_IMPORTED_MODULE_2__.BlurFilter(8); }, []);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        setReelPositions(Array(reels).fill(0));\n        setStoppedReels(Array(reels).fill(true));\n    }, [reels]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playBackgroundMusic();\n        return function () {\n            _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].stopBackgroundMusic();\n        };\n    }, []);\n    var spin = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function () {\n        if (spinning)\n            return;\n        try {\n            var newBalance = _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.spin(betAmount);\n            setBalance(newBalance);\n            setSpinning(true);\n            setStoppedReels(Array(reels).fill(false));\n            var stopReels_1 = function (reelIndex) {\n                if (reelIndex >= reels) {\n                    setSpinning(false);\n                    return;\n                }\n                setTimeout(function () {\n                    setStoppedReels(function (prev) {\n                        var newStoppedReels = __spreadArray([], prev, true);\n                        newStoppedReels[reelIndex] = true;\n                        _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playStopSound();\n                        return newStoppedReels;\n                    });\n                    stopReels_1(reelIndex + 1);\n                }, spinDuration / reels);\n            };\n            setTimeout(function () { return stopReels_1(0); }, spinDuration);\n        }\n        catch (error) {\n            console.error(error);\n            alert(error.message);\n        }\n    }, [spinning, reels, spinDuration, betAmount]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        var animationFrame;\n        var animate = function () {\n            setReelPositions(function (prev) { return prev.map(function (pos, index) {\n                return stoppedReels[index]\n                    ? Math.round(pos / symbolHeight) * symbolHeight\n                    : (pos - spinSpeed + symbols.length * symbolHeight) % (symbols.length * symbolHeight);\n            }); });\n            animationFrame = requestAnimationFrame(animate);\n        };\n        animationFrame = requestAnimationFrame(animate);\n        return function () { return cancelAnimationFrame(animationFrame); };\n    }, [symbols.length, symbolHeight, stoppedReels, spinSpeed]);\n    var backgroundTexture = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(__webpack_require__(/*! ../assets/img/slot-bg.png */ \"./src/assets/img/slot-bg.png\")); }, []);\n    var drawBackground = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.beginTextureFill({ texture: backgroundTexture });\n        g.drawRect(0, 0, machineWidth, machineHeight);\n        g.endFill();\n        // Draw the border around the reels\n        g.lineStyle(borderWidth * 2, 0xFFD700, 1);\n        g.drawRoundedRect((machineWidth - reelsWidth) / 2 - borderWidth, topPadding - borderWidth, reelsWidth + borderWidth * 2, reelsHeight + borderWidth * 2, 10);\n    }, [machineWidth, machineHeight, reelsWidth, reelsHeight, borderWidth, topPadding, backgroundTexture]);\n    var drawGradientBorder = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g, x, y, width, height) {\n        var canvas = document.createElement('canvas');\n        var ctx = canvas.getContext('2d');\n        canvas.width = width;\n        canvas.height = height;\n        var gradient = ctx.createLinearGradient(0, 0, 0, height);\n        gradient.addColorStop(0, '#FDB931');\n        gradient.addColorStop(0.5, '#FFFFAC');\n        gradient.addColorStop(1, '#FDB931');\n        ctx.fillStyle = gradient;\n        ctx.fillRect(0, 0, width, height);\n        var borderTexture = pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(canvas);\n        g.beginTextureFill({ texture: borderTexture });\n        g.drawRect(x, y, width, height);\n        g.endFill();\n    }, []);\n    var drawButton = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (label, g, hovered) {\n        g.clear();\n        g.lineStyle(2, 0xFFFFAC, 1);\n        g.beginFill(hovered ? 0xFDC031 : 0xFDB931, 1);\n        label !== 'SPIN' ?\n            g.drawRoundedRect(0, 0, label === '+' || label === '-' ? buttonWidthSmall : buttonWidth, buttonHeight, 10) :\n            g.drawRoundedRect(0, 0, buttonWidthSmall, buttonWidthSmall, 40);\n        g.endFill();\n    }, [buttonWidth, buttonHeight]);\n    var drawDropup = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.lineStyle(2, 0xFFFFAC, 1);\n        g.beginFill(0xFDB931, 1);\n        g.drawRoundedRect(0, 0, buttonWidth, 140, 10);\n        g.endFill();\n    }, [buttonWidth]);\n    var drawDropupOption = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g, hovered) {\n        g.clear();\n        g.beginFill(hovered ? 0xFDC031 : 0xFDB931, 1);\n        g.drawRect(0, 0, buttonWidth, 35);\n        g.endFill();\n    }, [buttonWidth]);\n    var drawReelOverlay = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.beginFill(0x000000, 0.3);\n        g.drawRect(0, 0, reelsWidth, reelsHeight);\n        g.endFill();\n    }, [reelsWidth, reelsHeight]);\n    var renderDropup = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (options, setter, closeDropup) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: options.length * -35, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawDropup }), options.map(function (option, index) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: 35 * index + 5, eventMode: \"static\", cursor: \"pointer\", pointerover: function () { return setHoveredOption(option); }, pointerout: function () { return setHoveredOption(null); }, pointerdown: function () {\n                    _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playClickSound();\n                    setter(option); // This should be updating the betAmount\n                    setBetAmount(option); // Ensure this updates the betAmount directly\n                    closeDropup();\n                }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawDropupOption(g, hoveredOption === option); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: option.toString(), x: buttonWidth / 2, y: 17.5, anchor: 0.5, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                            fontFamily: 'Arial',\n                            fontSize: 18,\n                            fontWeight: 'bold',\n                            fill: '#222222',\n                        }) })] }, option)); })] })); }, [drawDropup, drawDropupOption, buttonWidth, hoveredOption]);\n    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawBackground }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: \"BALANCE: \".concat(balance, \" BET: \").concat(betAmount), x: 20, y: 10, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                    fontFamily: 'sans-serif',\n                    fontSize: 20,\n                    fontWeight: 'bold',\n                    fill: '#FFFFFF',\n                }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: (machineWidth - reelsWidth) / 2, y: topPadding, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { mask: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.Graphics().beginFill(0xFFFFFF).drawRect(0, 0, reelsWidth + 60, reelsHeight + 60).endFill(), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawReelOverlay }), Array.from({ length: reels }).map(function (_, reelIndex) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: reelIndex * (reelWidth + borderWidth), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawGradientBorder(g, -borderWidth / 2, 0, borderWidth, reelsHeight); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: 25, mask: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.Graphics().beginFill(0xFFFFFF).drawRect(0, 0, reelWidth * reels + 60, reelsHeight + 60).endFill(), filters: !stoppedReels[reelIndex] ? [blurFilter] : [], children: Array.from({ length: symbols.length + rows }).map(function (_, symbolIndex) {\n                                        var y = ((symbolIndex * symbolHeight - reelPositions[reelIndex]) % (symbols.length * symbolHeight) + symbols.length * symbolHeight) % (symbols.length * symbolHeight);\n                                        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Sprite, { texture: textures[symbolIndex % symbols.length], x: (reelWidth - symbolSize) / 2, y: y, width: symbolSize, height: symbolSize }, symbolIndex));\n                                    }) })] }, reelIndex)); })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: machineHeight - 70, children: ['LINES', 'COLS', '-', 'BET', '+', 'SPIN'].map(function (label, index) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: 20 + index * (label === 'BET' ? buttonWidth : label === '+' ? buttonWidthSmall * 2 + 5 : label === 'SPIN' ? buttonWidth * 1.35 : buttonWidth + buttonSpacing), eventMode: \"static\", cursor: \"pointer\", pointerdown: function () {\n                        _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playClickSound();\n                        if (label === 'LINES')\n                            setShowLinesDropup(!showLinesDropup);\n                        if (label === 'COLS')\n                            setShowColsDropup(!showColsDropup);\n                        if (label === '-') {\n                            var newBetIndex = Math.max(betIndex - 1, 0);\n                            setBetIndex(newBetIndex);\n                            setBetAmount(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[newBetIndex]);\n                        }\n                        if (label === 'BET') {\n                            setShowBetAmounts(function (prev) { return !prev; });\n                        }\n                        if (label === '+') {\n                            var newBetIndex = Math.min(betIndex + 1, _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts().length - 1);\n                            setBetIndex(newBetIndex);\n                            setBetAmount(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[newBetIndex]);\n                        }\n                        if (label === 'SPIN')\n                            spin();\n                    }, pointerover: function () { return setHoveredButton(label); }, pointerout: function () { return setHoveredButton(null); }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawButton(label, g, hoveredButton === label); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: \"\".concat(label).concat(label !== 'SPIN' ? '' : '').concat(label === 'LINES' ? ': ' + rows :\n                                label === 'COLS' ? ': ' + reels :\n                                    label === 'BET' ? ': ' + _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[betIndex] :\n                                        '').trim(), anchor: 0.5, x: label === '+' || label === '-' ? buttonWidthSmall / 2 : label === 'SPIN' ? buttonWidth / 4 : buttonWidth / 2, y: label === 'SPIN' ? buttonWidth / 4 : buttonHeight / 2, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                                fontFamily: 'Arial',\n                                fontSize: 18,\n                                fontWeight: 'bold',\n                                fill: '#222222',\n                            }) }), label === 'LINES' && showLinesDropup && renderDropup([3, 4, 5, 6], setRows, function () { return setShowLinesDropup(false); }), label === 'COLS' && showColsDropup && renderDropup([3, 4, 5, 6], setReels, function () { return setShowColsDropup(false); }), label === '-' && showBetAmounts, label === 'BET' && showBetAmounts && renderDropup(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts(), function (value) {\n                            setBetAmount(value);\n                            setBetIndex(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts().indexOf(value));\n                        }, function () { return setShowBetAmounts(false); }), label === '+' && showBetAmounts] }, label)); }) })] }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SlotMachine);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/components/SlotMachine.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _pixi_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/react */ \"./node_modules/@pixi/react/dist/index.es-dev.js\");\n/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! pixi.js */ \"./node_modules/pixi.js/lib/index.mjs\");\n/* harmony import */ var _services_game_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/game.service */ \"./src/services/game.service.ts\");\n/* harmony import */ var _services_audio_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/audio.service */ \"./src/services/audio.service.ts\");\nvar __spreadArray = (undefined && undefined.__spreadArray) || function (to, from, pack) {\n    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {\n        if (ar || !(i in from)) {\n            if (!ar) ar = Array.prototype.slice.call(from, 0, i);\n            ar[i] = from[i];\n        }\n    }\n    return to.concat(ar || Array.prototype.slice.call(from));\n};\n\n\n\n\n\n\nvar SlotMachine = function (_a) {\n    var _b = _a.reels, initialReels = _b === void 0 ? 5 : _b, _c = _a.rows, initialRows = _c === void 0 ? 5 : _c, symbols = _a.symbols, _d = _a.spinDuration, spinDuration = _d === void 0 ? 3000 : _d, _e = _a.spinSpeed, spinSpeed = _e === void 0 ? 30 : _e;\n    var _f = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), spinning = _f[0], setSpinning = _f[1];\n    var _g = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initialReels), reels = _g[0], setReels = _g[1];\n    var _h = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(initialRows), rows = _h[0], setRows = _h[1];\n    var _j = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]), reelPositions = _j[0], setReelPositions = _j[1];\n    var _k = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]), stoppedReels = _k[0], setStoppedReels = _k[1];\n    var _l = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(5), betAmount = _l[0], setBetAmount = _l[1];\n    var _m = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showLinesDropup = _m[0], setShowLinesDropup = _m[1];\n    var _o = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showColsDropup = _o[0], setShowColsDropup = _o[1];\n    var _p = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), showBetAmounts = _p[0], setShowBetAmounts = _p[1];\n    var _q = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getBalance()), balance = _q[0], setBalance = _q[1];\n    var _r = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null), hoveredButton = _r[0], setHoveredButton = _r[1];\n    var _s = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null), hoveredOption = _s[0], setHoveredOption = _s[1];\n    var _t = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0), betIndex = _t[0], setBetIndex = _t[1];\n    var _u = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false), clickedFirstTime = _u[0], setClickedFirstTime = _u[1];\n    var machineWidth = 900;\n    var machineHeight = 600;\n    var reelsWidth = machineWidth * 0.95;\n    var reelsHeight = machineHeight * 0.75;\n    var borderWidth = 4;\n    var buttonWidth = 120;\n    var buttonWidthSmall = 60;\n    var buttonHeight = 40;\n    var buttonSpacing = 20;\n    var topPadding = 60;\n    var reelWidth = (reelsWidth - (reels + 1) * borderWidth) / reels;\n    var symbolHeight = (reelsHeight - (rows + 1) * borderWidth) / rows;\n    var symbolSize = Math.min(reelWidth * 0.8, symbolHeight * 0.8);\n    var textures = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return symbols.map(function (symbol) { return pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(__webpack_require__(\"./src/assets/img sync recursive ^\\\\.\\\\/.*\\\\.png$\")(\"./\".concat(symbol, \".png\"))); }); }, [symbols]);\n    var blurFilter = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return new pixi_js__WEBPACK_IMPORTED_MODULE_2__.BlurFilter(8); }, []);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        setReelPositions(Array(reels).fill(0));\n        setStoppedReels(Array(reels).fill(true));\n    }, [reels]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        if (clickedFirstTime) {\n            _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playBackgroundMusic();\n            return function () {\n                _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].stopBackgroundMusic();\n            };\n        }\n    }, [clickedFirstTime]);\n    var handleUserClick = function () {\n        if (!clickedFirstTime) {\n            setClickedFirstTime(true);\n        }\n    };\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        document.addEventListener('click', handleUserClick);\n        return function () {\n            document.removeEventListener('click', handleUserClick);\n        };\n    }, [clickedFirstTime]);\n    var spin = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function () {\n        if (spinning)\n            return;\n        try {\n            var newBalance = _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.spin(betAmount);\n            setBalance(newBalance);\n            setSpinning(true);\n            setStoppedReels(Array(reels).fill(false));\n            var stopReels_1 = function (reelIndex) {\n                if (reelIndex >= reels) {\n                    setSpinning(false);\n                    return;\n                }\n                setTimeout(function () {\n                    setStoppedReels(function (prev) {\n                        var newStoppedReels = __spreadArray([], prev, true);\n                        newStoppedReels[reelIndex] = true;\n                        _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playStopSound();\n                        return newStoppedReels;\n                    });\n                    stopReels_1(reelIndex + 1);\n                }, spinDuration / reels);\n            };\n            setTimeout(function () { return stopReels_1(0); }, spinDuration);\n        }\n        catch (error) {\n            console.error(error);\n            alert(error.message);\n        }\n    }, [spinning, reels, spinDuration, betAmount]);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {\n        var animationFrame;\n        var animate = function () {\n            setReelPositions(function (prev) { return prev.map(function (pos, index) {\n                return stoppedReels[index]\n                    ? Math.round(pos / symbolHeight) * symbolHeight\n                    : (pos - spinSpeed + symbols.length * symbolHeight) % (symbols.length * symbolHeight);\n            }); });\n            animationFrame = requestAnimationFrame(animate);\n        };\n        animationFrame = requestAnimationFrame(animate);\n        return function () { return cancelAnimationFrame(animationFrame); };\n    }, [symbols.length, symbolHeight, stoppedReels, spinSpeed]);\n    var backgroundTexture = (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(function () { return pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(__webpack_require__(/*! ../assets/img/slot-bg.png */ \"./src/assets/img/slot-bg.png\")); }, []);\n    var drawBackground = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.beginTextureFill({ texture: backgroundTexture });\n        g.drawRect(0, 0, machineWidth, machineHeight);\n        g.endFill();\n        // Draw the border around the reels\n        g.lineStyle(borderWidth * 2, 0xFFD700, 1);\n        g.drawRoundedRect((machineWidth - reelsWidth) / 2 - borderWidth, topPadding - borderWidth, reelsWidth + borderWidth * 2, reelsHeight + borderWidth * 2, 10);\n    }, [machineWidth, machineHeight, reelsWidth, reelsHeight, borderWidth, topPadding, backgroundTexture]);\n    var drawGradientBorder = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g, x, y, width, height) {\n        var canvas = document.createElement('canvas');\n        var ctx = canvas.getContext('2d');\n        canvas.width = width;\n        canvas.height = height;\n        var gradient = ctx.createLinearGradient(0, 0, 0, height);\n        gradient.addColorStop(0, '#FDB931');\n        gradient.addColorStop(0.5, '#FFFFAC');\n        gradient.addColorStop(1, '#FDB931');\n        ctx.fillStyle = gradient;\n        ctx.fillRect(0, 0, width, height);\n        var borderTexture = pixi_js__WEBPACK_IMPORTED_MODULE_2__.Texture.from(canvas);\n        g.beginTextureFill({ texture: borderTexture });\n        g.drawRect(x, y, width, height);\n        g.endFill();\n    }, []);\n    var drawButton = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (label, g, hovered) {\n        g.clear();\n        g.lineStyle(2, 0xFFFFAC, 1);\n        g.beginFill(hovered ? 0xFDC031 : 0xFDB931, 1);\n        label !== 'SPIN' ?\n            g.drawRoundedRect(0, 0, label === '+' || label === '-' ? buttonWidthSmall : buttonWidth, buttonHeight, 10) :\n            g.drawRoundedRect(0, 0, buttonWidthSmall, buttonWidthSmall, 40);\n        g.endFill();\n    }, [buttonWidth, buttonHeight]);\n    var drawDropup = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.lineStyle(2, 0xFFFFAC, 1);\n        g.beginFill(0xFDB931, 1);\n        g.drawRoundedRect(0, 0, buttonWidth, 140, 10);\n        g.endFill();\n    }, [buttonWidth]);\n    var drawDropupOption = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g, hovered) {\n        g.clear();\n        g.beginFill(hovered ? 0xFDC031 : 0xFDB931, 1);\n        g.drawRect(0, 0, buttonWidth, 35);\n        g.endFill();\n    }, [buttonWidth]);\n    var drawReelOverlay = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (g) {\n        g.clear();\n        g.beginFill(0x000000, 0.3);\n        g.drawRect(0, 0, reelsWidth, reelsHeight);\n        g.endFill();\n    }, [reelsWidth, reelsHeight]);\n    var renderDropup = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)(function (options, setter, closeDropup) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: options.length * -35, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawDropup }), options.map(function (option, index) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: 35 * index + 5, eventMode: \"static\", cursor: \"pointer\", pointerover: function () { return setHoveredOption(option); }, pointerout: function () { return setHoveredOption(null); }, pointerdown: function () {\n                    _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playClickSound();\n                    setter(option); // This should be updating the betAmount\n                    setBetAmount(option); // Ensure this updates the betAmount directly\n                    closeDropup();\n                }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawDropupOption(g, hoveredOption === option); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: option.toString(), x: buttonWidth / 2, y: 17.5, anchor: 0.5, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                            fontFamily: 'Arial',\n                            fontSize: 18,\n                            fontWeight: 'bold',\n                            fill: '#222222',\n                        }) })] }, option)); })] })); }, [drawDropup, drawDropupOption, buttonWidth, hoveredOption]);\n    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawBackground }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: \"BALANCE: \".concat(balance, \" BET: \").concat(betAmount), x: 20, y: 10, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                    fontFamily: 'sans-serif',\n                    fontSize: 20,\n                    fontWeight: 'bold',\n                    fill: '#FFFFFF',\n                }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: (machineWidth - reelsWidth) / 2, y: topPadding, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { mask: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.Graphics().beginFill(0xFFFFFF).drawRect(0, 0, reelsWidth + 60, reelsHeight + 60).endFill(), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: drawReelOverlay }), Array.from({ length: reels }).map(function (_, reelIndex) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: reelIndex * (reelWidth + borderWidth), children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawGradientBorder(g, -borderWidth / 2, 0, borderWidth, reelsHeight); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: 25, mask: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.Graphics().beginFill(0xFFFFFF).drawRect(0, 0, reelWidth * reels + 60, reelsHeight + 60).endFill(), filters: !stoppedReels[reelIndex] ? [blurFilter] : [], children: Array.from({ length: symbols.length + rows }).map(function (_, symbolIndex) {\n                                        var y = ((symbolIndex * symbolHeight - reelPositions[reelIndex]) % (symbols.length * symbolHeight) + symbols.length * symbolHeight) % (symbols.length * symbolHeight);\n                                        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Sprite, { texture: textures[symbolIndex % symbols.length], x: (reelWidth - symbolSize) / 2, y: y, width: symbolSize, height: symbolSize }, symbolIndex));\n                                    }) })] }, reelIndex)); })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { y: machineHeight - 70, children: ['LINES', 'COLS', '-', 'BET', '+', 'SPIN'].map(function (label, index) { return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Container, { x: 20 + index * (label === 'BET' ? buttonWidth : label === '+' ? buttonWidthSmall * 2 + 5 : label === 'SPIN' ? buttonWidth * 1.35 : buttonWidth + buttonSpacing), eventMode: \"static\", cursor: \"pointer\", pointerdown: function () {\n                        _services_audio_service__WEBPACK_IMPORTED_MODULE_4__[\"default\"].playClickSound();\n                        if (label === 'LINES')\n                            setShowLinesDropup(!showLinesDropup);\n                        if (label === 'COLS')\n                            setShowColsDropup(!showColsDropup);\n                        if (label === '-') {\n                            var newBetIndex = Math.max(betIndex - 1, 0);\n                            setBetIndex(newBetIndex);\n                            setBetAmount(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[newBetIndex]);\n                        }\n                        if (label === 'BET') {\n                            setShowBetAmounts(function (prev) { return !prev; });\n                        }\n                        if (label === '+') {\n                            var newBetIndex = Math.min(betIndex + 1, _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts().length - 1);\n                            setBetIndex(newBetIndex);\n                            setBetAmount(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[newBetIndex]);\n                        }\n                        if (label === 'SPIN')\n                            spin();\n                    }, pointerover: function () { return setHoveredButton(label); }, pointerout: function () { return setHoveredButton(null); }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Graphics, { draw: function (g) { return drawButton(label, g, hoveredButton === label); } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_pixi_react__WEBPACK_IMPORTED_MODULE_5__.Text, { text: \"\".concat(label).concat(label !== 'SPIN' ? '' : '').concat(label === 'LINES' ? ': ' + rows :\n                                label === 'COLS' ? ': ' + reels :\n                                    label === 'BET' ? ': ' + _services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts()[betIndex] :\n                                        '').trim(), anchor: 0.5, x: label === '+' || label === '-' ? buttonWidthSmall / 2 : label === 'SPIN' ? buttonWidth / 4 : buttonWidth / 2, y: label === 'SPIN' ? buttonWidth / 4 : buttonHeight / 2, style: new pixi_js__WEBPACK_IMPORTED_MODULE_2__.TextStyle({\n                                fontFamily: 'Arial',\n                                fontSize: 18,\n                                fontWeight: 'bold',\n                                fill: '#222222',\n                            }) }), label === 'LINES' && showLinesDropup && renderDropup([3, 4, 5, 6], setRows, function () { return setShowLinesDropup(false); }), label === 'COLS' && showColsDropup && renderDropup([3, 4, 5, 6], setReels, function () { return setShowColsDropup(false); }), label === '-' && showBetAmounts, label === 'BET' && showBetAmounts && renderDropup(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts(), function (value) {\n                            setBetAmount(value);\n                            setBetIndex(_services_game_service__WEBPACK_IMPORTED_MODULE_3__.GameService.getAvailableAmounts().indexOf(value));\n                        }, function () { return setShowBetAmounts(false); }), label === '+' && showBetAmounts] }, label)); }) })] }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SlotMachine);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/components/SlotMachine.tsx?");
 
 /***/ }),
 
@@ -850,7 +618,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar AudioService = /** @class */ (function () {\n    function AudioService() {\n        this.backgroundMusic = new Audio(__webpack_require__(/*! ../assets/sfx/background.mp3 */ \"./src/assets/sfx/background.mp3\"));\n        this.clickSound = new Audio(__webpack_require__(/*! ../assets/sfx/click.mp3 */ \"./src/assets/sfx/click.mp3\"));\n        this.stopSound = new Audio(__webpack_require__(/*! ../assets/sfx/stop.wav */ \"./src/assets/sfx/stop.wav\"));\n        this.backgroundMusic.loop = true;\n    }\n    AudioService.prototype.playBackgroundMusic = function () {\n        this.backgroundMusic.volume = .3;\n        this\n            .backgroundMusic\n            .play()\n            .catch(function (error) { return console.error(\"Error playing background music: \", error); });\n    };\n    AudioService.prototype.stopBackgroundMusic = function () {\n        this\n            .backgroundMusic\n            .pause();\n        this.backgroundMusic.currentTime = 0;\n    };\n    AudioService.prototype.playStopSound = function () {\n        this.stopSound.volume = 1;\n        this.stopSound.currentTime = 0;\n        this\n            .stopSound\n            .play()\n            .catch(function (error) { return console.error(\"Error playing stop sound: \", error); });\n    };\n    AudioService.prototype.playClickSound = function () {\n        this.clickSound.volume = 1;\n        this.clickSound.currentTime = 0;\n        this\n            .clickSound\n            .play()\n            .catch(function (error) { return console.error(\"Error playing click sound: \", error); });\n    };\n    return AudioService;\n}());\nvar audioService = new AudioService();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (audioService);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/services/audio.service.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar AudioService = /** @class */ (function () {\n    function AudioService() {\n        this.backgroundMusic = new Audio(__webpack_require__(/*! ../assets/sfx/background.mp3 */ \"./src/assets/sfx/background.mp3\"));\n        this.clickSound = new Audio(__webpack_require__(/*! ../assets/sfx/click.mp3 */ \"./src/assets/sfx/click.mp3\"));\n        this.stopSound = new Audio(__webpack_require__(/*! ../assets/sfx/stop.wav */ \"./src/assets/sfx/stop.wav\"));\n        this.backgroundMusic.loop = true;\n    }\n    AudioService.prototype.playBackgroundMusic = function () {\n        this.backgroundMusic.volume = .15;\n        this\n            .backgroundMusic\n            .play()\n            .catch(function (error) { return console.error(\"Error playing background music: \", error); });\n    };\n    AudioService.prototype.stopBackgroundMusic = function () {\n        this\n            .backgroundMusic\n            .pause();\n        this.backgroundMusic.currentTime = 0;\n    };\n    AudioService.prototype.playStopSound = function () {\n        this.stopSound.volume = 1;\n        this.stopSound.currentTime = 0;\n        this\n            .stopSound\n            .play()\n            .catch(function (error) { return console.error(\"Error playing stop sound: \", error); });\n    };\n    AudioService.prototype.playClickSound = function () {\n        this.clickSound.volume = 1;\n        this.clickSound.currentTime = 0;\n        this\n            .clickSound\n            .play()\n            .catch(function (error) { return console.error(\"Error playing click sound: \", error); });\n    };\n    return AudioService;\n}());\nvar audioService = new AudioService();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (audioService);\n\n\n//# sourceURL=webpack://vorhol-slot/./src/services/audio.service.ts?");
 
 /***/ }),
 
@@ -893,6 +661,149 @@ eval("/*\n * Copyright Joyent, Inc. and other Node contributors.\n *\n * Permiss
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var map = {\n\t\"./banana.png\": \"./src/assets/img/banana.png\",\n\t\"./bars.png\": \"./src/assets/img/bars.png\",\n\t\"./bigwin.png\": \"./src/assets/img/bigwin.png\",\n\t\"./cherry.png\": \"./src/assets/img/cherry.png\",\n\t\"./lemon.png\": \"./src/assets/img/lemon.png\",\n\t\"./orange.png\": \"./src/assets/img/orange.png\",\n\t\"./plum.png\": \"./src/assets/img/plum.png\",\n\t\"./seven.png\": \"./src/assets/img/seven.png\",\n\t\"./slot-bg.png\": \"./src/assets/img/slot-bg.png\",\n\t\"./watermelon.png\": \"./src/assets/img/watermelon.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/assets/img sync recursive ^\\\\.\\\\/.*\\\\.png$\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/_sync_^\\.\\/.*\\.png$?");
+
+/***/ }),
+
+/***/ "./src/assets/img/banana.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/banana.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/banana.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/banana.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/bars.png":
+/*!*********************************!*\
+  !*** ./src/assets/img/bars.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/bars.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/bars.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/bigwin.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/bigwin.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/bigwin.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/bigwin.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/cherry.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/cherry.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/cherry.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/cherry.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/lemon.png":
+/*!**********************************!*\
+  !*** ./src/assets/img/lemon.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/lemon.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/lemon.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/orange.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/orange.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/orange.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/orange.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/plum.png":
+/*!*********************************!*\
+  !*** ./src/assets/img/plum.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/plum.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/plum.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/seven.png":
+/*!**********************************!*\
+  !*** ./src/assets/img/seven.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/seven.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/seven.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/slot-bg.png":
+/*!************************************!*\
+  !*** ./src/assets/img/slot-bg.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/slot-bg.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/slot-bg.png?");
+
+/***/ }),
+
+/***/ "./src/assets/img/watermelon.png":
+/*!***************************************!*\
+  !*** ./src/assets/img/watermelon.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/img/watermelon.png\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/img/watermelon.png?");
+
+/***/ }),
+
+/***/ "./src/assets/sfx/background.mp3":
+/*!***************************************!*\
+  !*** ./src/assets/sfx/background.mp3 ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/sfx/background.mp3\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/background.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/sfx/click.mp3":
+/*!**********************************!*\
+  !*** ./src/assets/sfx/click.mp3 ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/sfx/click.mp3\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/click.mp3?");
+
+/***/ }),
+
+/***/ "./src/assets/sfx/stop.wav":
+/*!*********************************!*\
+  !*** ./src/assets/sfx/stop.wav ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/sfx/stop.wav\";\n\n//# sourceURL=webpack://vorhol-slot/./src/assets/sfx/stop.wav?");
 
 /***/ }),
 
@@ -5066,6 +4977,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/get mini-css chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return undefined;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -5262,11 +5182,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		var chunkLoadingGlobal = self["webpackChunkvorhol_slot"] = self["webpackChunkvorhol_slot"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/nonce */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
