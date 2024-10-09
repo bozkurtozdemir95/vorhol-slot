@@ -196,7 +196,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({
     g.endFill();
   }, [reelsWidth, reelsHeight]);
 
-  const renderDropup = useCallback((options: number[], setter: (value: number) => void, closeDropup: () => void) => (
+  const renderDropup = useCallback((label: string, options: number[], setter: (value: number) => void, closeDropup: () => void) => (
     <Container y={options.length * -35}>
       <Graphics draw={drawDropup} />
       {options.map((option, index) => (
@@ -209,8 +209,10 @@ const SlotMachine: React.FC<SlotMachineProps> = ({
           pointerout={() => setHoveredOption(null)}
           pointerdown={() => {
             audioService.playClickSound();
-            setter(option); // This should be updating the betAmount
-            setBetAmount(option); // Ensure this updates the betAmount directly
+            setter(option);
+            if (label === 'BET') {
+              setBetAmount(option);
+            }
             closeDropup();
           }}
         >
@@ -328,10 +330,10 @@ const SlotMachine: React.FC<SlotMachineProps> = ({
                 fill: '#222222',
               })}
             />
-            {label === 'LINES' && showLinesDropup && renderDropup([3, 4, 5, 6], setRows, () => setShowLinesDropup(false))}
-            {label === 'COLS' && showColsDropup && renderDropup([3, 4, 5, 6], setReels, () => setShowColsDropup(false))}
+            {label === 'LINES' && showLinesDropup && renderDropup(label, [3, 4, 5, 6], setRows, () => setShowLinesDropup(false))}
+            {label === 'COLS' && showColsDropup && renderDropup(label, [3, 4, 5, 6], setReels, () => setShowColsDropup(false))}
             {label === '-' && showBetAmounts}
-            {label === 'BET' && showBetAmounts && renderDropup(GameService.getAvailableAmounts(), (value) => {
+            {label === 'BET' && showBetAmounts && renderDropup(label,GameService.getAvailableAmounts(), (value) => {
             setBetAmount(value);
             setBetIndex(GameService.getAvailableAmounts().indexOf(value));
           }, () => setShowBetAmounts(false))}

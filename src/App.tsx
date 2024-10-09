@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Stage} from '@pixi/react';
 import SlotMachine from './components/SlotMachine';
+import logo from './assets/img/vorhol.svg';
 import './index.css';
 
 const App : React.FC = () => {
@@ -25,10 +26,13 @@ const App : React.FC = () => {
 
     return (
         <div
-            className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+            className="min-h-screen bg-neutral-300 py-6 flex flex-col justify-center sm:py-12">
             <div className="relative py-3 flex justify-center">
-                <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-                    <h1 className="text-4xl font-bold mb-5 text-center text-gray-800">VORHOL SLOT</h1>
+                <div className="relative flex flex-col items-center px-4 py-10 bg-gray-100 shadow-lg sm:rounded-3xl sm:p-20">
+                    <div className="flex items-center text-2xl font-bold text-yellow-400 mb-5">
+                        <img className='mr-2 w-24' src={logo} alt="VORHOL" /> 
+                        SLOT
+                    </div>
                     <div
                         id="pixi-container"
                         style={{
