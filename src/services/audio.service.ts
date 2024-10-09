@@ -12,7 +12,7 @@ class AudioService {
     }
 
     playBackgroundMusic() {
-        this.backgroundMusic.volume = .3;
+        this.backgroundMusic.volume = .15;
         this
             .backgroundMusic
             .play()

@@ -33,6 +33,7 @@ const SlotMachine: React.FC<SlotMachineProps> = ({
   const [hoveredButton, setHoveredButton] = useState<string | null>(null);
   const [hoveredOption, setHoveredOption] = useState<number | null>(null);
   const [betIndex, setBetIndex] = useState(0); 
+  const [clickedFirstTime, setClickedFirstTime] = useState(false);
 
   const machineWidth = 900;
   const machineHeight = 600;
@@ -58,12 +59,26 @@ const SlotMachine: React.FC<SlotMachineProps> = ({
   }, [reels]);
 
   useEffect(() => {
-    audioService.playBackgroundMusic();
-    return () => {
-      audioService.stopBackgroundMusic();
-    };
-  }, []);
+    if (clickedFirstTime) {
+      audioService.playBackgroundMusic();
+      return () => {
+        audioService.stopBackgroundMusic();
+      };
+    }
+  }, [clickedFirstTime]);
 
+  const handleUserClick = () => {
+    if (!clickedFirstTime) {
+      setClickedFirstTime(true);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('click', handleUserClick);
+    return () => {
+      document.removeEventListener('click', handleUserClick);
+    };
+  }, [clickedFirstTime]);
+  
   const spin = useCallback(() => {
     if (spinning) return;
     try {
